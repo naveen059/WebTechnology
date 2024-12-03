@@ -1,0 +1,18 @@
+p:hover{
+    background-color: red;
+    font-family : monospace;
+}
+
+p::after {
+    content : " Learn More. ";
+    text-decoration: underline;
+}
+
+
+p::selection{
+    background-color: violet;
+}
+
+p:nth-child(3){
+    font-size: 32px;
+}

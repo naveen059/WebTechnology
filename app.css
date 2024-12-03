@@ -1,0 +1,94 @@
+*{
+    margin: 0px;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: brown;
+    padding: 20px;
+}
+
+
+.navbar{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+
+.navbar > li > a {
+    color: white;
+    font-size: 18px;
+}
+
+
+li > a:hover {
+    background: teal;
+}
+
+.navbar-brand{
+    color: white;
+    font-size: 24px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    color: white;
+}
+
+
+
+.hero{
+    text-align: center;
+    background: url("background.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: 100%;
+}
+
+
+.hero > h2, p, a {
+    color: white;
+    /* margin-top: 30px; */
+}
+
+
+.counterBtn{
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    margin: auto;
+    cursor: pointer;
+}
+
+h1{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.parent{
+    width: 300px;
+    height: 400px;
+    border: 2px solid tomato;
+    background-color: red;
+    color: white;
+    font-size: 30px;
+}
+
+
+form{
+    margin:30px 200px;
+}
+
+
+

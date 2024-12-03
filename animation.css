@@ -1,0 +1,52 @@
+/* CSS Animations Essential Examples */
+
+/* 1. Basic Scaling Animation */
+@keyframes vanishing {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(3); }
+}
+
+img {
+    animation: vanishing 4s infinite;
+}
+
+/* 2. Simple Rotation Animation */
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spinner {
+    animation: rotate 2s linear infinite;
+}
+
+/* 3. Fade In/Out Animation */
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.fade-element {
+    animation: fadeInOut 3s ease-in-out infinite;
+}
+
+/* 4. Sliding Animation */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(200px); }
+}
+
+.slide-element {
+    animation: slide 2s alternate infinite;
+}
+
+/* 5. Color Transition */
+@keyframes colorChange {
+    0% { background-color: red; }
+    50% { background-color: green; }
+    100% { background-color: blue; }
+}
+
+.color-changing {
+    animation: colorChange 5s infinite;
+}

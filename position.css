@@ -1,0 +1,38 @@
+.parent{
+    position: relative;
+
+    top: 45px;
+    left: 75px;
+}
+
+
+
+.div1{
+    padding: 30px;
+    margin: 10px;
+    background-color: blueviolet;
+    border: 2px solid black;
+    width: 30vw;
+    height: 5em;
+
+    /* positions */
+
+    position: absolute;
+
+    bottom: 150px;
+
+
+
+}
+
+.sticky{
+    position: sticky;
+
+
+    right: 10px;
+
+    top: 20px;
+
+    height: 300px;
+}
+

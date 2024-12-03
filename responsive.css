@@ -1,0 +1,48 @@
+/* Essential Responsive Media Queries */
+
+/* 1. Mobile Devices (Small Screens) */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .responsive-element {
+        width: 100%;
+    }
+}
+
+/* 2. Tablets (Medium Screens) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .navigation {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+/* 3. Responsive Typography */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* 4. Flexible Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 5. Hide/Show Elements */
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+}
