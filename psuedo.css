@@ -1,18 +1,52 @@
-p:hover{
+/* Essential Pseudo-classes and Pseudo-elements */
+
+/* 1. Hover Effect */
+p:hover {
     background-color: red;
-    font-family : monospace;
+}
+
+/* 2. First and Last Child */
+p:first-child {
+    color: green;
+}
+
+p:last-child {
+    color: red;
+}
+
+/* 3. Nth-child Selector */
+p:nth-child(3) {
+    font-size: 32px;
+}
+
+/* 4. Link States */
+a:link { color: blue; }
+a:visited { color: purple; }
+a:hover { text-decoration: underline; }
+a:active { color: red; }
+
+/* 5. Input States */
+input:focus {
+    border: 2px solid blue;
+}
+
+input:disabled {
+    background-color: #cccccc;
+}
+
+/* 6. Pseudo-elements */
+p::first-letter {
+    font-size: 2em;
+    color: red;
 }
 
 p::after {
-    content : " Learn More. ";
-    text-decoration: underline;
+    content: " Learn More";
+    color: blue;
 }
 
-
-p::selection{
+/* 7. Selection Styling */
+p::selection {
     background-color: violet;
-}
-
-p:nth-child(3){
-    font-size: 32px;
+    color: white;
 }
