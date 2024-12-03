@@ -69,10 +69,28 @@ let obj = {
 };
 
 for(let key of obj){
-    console.log(`keys = ${key} and values = ${obj}`)
+    console.log(`keys = ${key} and values = ${obj}`);
 }
 
 //for in
+for(let fruit in fruits){
+    console.log(`fruit : ${fruits}`);
+}
+
+//JSON - methods
+let jsonData = {
+    "name": "John",
+    "age" : 34,
+    "DOB" : "02/11/1983",
+    "address" : {
+                    "street" : "weavers street",
+                    "region" : "Bangalore",
+                    "pincode" : 560054,
+                },
+}
+
+let JsonString = JSON.stringify(jsonData);
+let JsonObject = JSON.parse(JsonString);
 
 
 // 7. Promises
