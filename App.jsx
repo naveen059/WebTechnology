@@ -13,7 +13,7 @@ function App() {
   const fetchMovies = (query) => {
     setLoading(true);
     setError(null);
-    const apiKey = '48877f7e55df558a0f0da254128d015f';
+    const apiKey = 'Your_API_KEY';
     axios
       .get(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${query}`)
       .then((response) => {
