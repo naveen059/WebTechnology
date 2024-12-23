@@ -1,40 +1,58 @@
-import React, { Component } from 'react';
+import React from 'react'
 
-class LifeCycleMethods extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: null,
-    };
-    console.log('Constructor: Component Initialized');
-  }
+class LifeCycleMethods extends React.Component {
+    constructor(props){
+        super(props)
 
-  componentDidMount() {
-    console.log('Component Mounted');
-  }
+        console.log("Component constructed")
 
-  componentDidUpdate(prevProps, prevState) {
-    if (prevState.data !== this.state.data) {
-      console.log('Data Updated:', this.state.data);
+        this.state = {
+            count : 0
+        }
+
+        this.setCount = this.setCount.bind(this)
     }
-  }
 
-  componentWillUnmount() {
-    console.log('Component Unmounted');
-  }
+    setCount () {
+        this.setState({
+            count : this.state.count + 1
+        })
+    }
 
-  updateData = () => {
-    this.setState({ data: 'New Data' });
-  };
+    render() {
+        return (
+            <>
+            <p>Count : {this.state.count}</p>
 
-  render() {
-    return (
-      <div>
-        <h1>Lifecycle Methods</h1>
-        <button onClick={this.updateData}>Update Data</button>
-      </div>
-    );
-  }
+            <button onClick={this.setCount}>count</button>
+
+            {console.log("component rendered")}
+            </>
+        )
+    }
+
+
+    componentDidMount(){
+        console.log("component mounted")
+    }
+
+    componentDidUpdate(prevProps, prevState){
+        if(prevState.count !== this.state.count){
+            console.log("component updated")
+        }
+    }
+
+    shouldComponentUpdate(nextProp, nextState) {
+        if(nextState.count <= 6){
+            return true
+        }else{
+            return false
+        }
+    }
+
+    componentWillUnmount(){
+        console.log("component unmounted")
+    }
 }
 
-export default LifeCycleMethods;
+export default LifeCycleMethods
